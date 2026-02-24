@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Portofolio Yohanes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #e3f2fd, #ffffff);
+    }
+
+    header {
+      background: linear-gradient(135deg, #317ac4, #1e5799);
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 50px;
+      font-family: 'Arial', sans-serif;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    header p {
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+
+    section {
+      background: white;
+      max-width: 900px;
+      margin: -40px auto 20px auto;
+      padding: 40px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    img.profile {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: -120px;
+      border: 6px solid white;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    .box-container {
+      display: flex;
+      justify-content: space-around;
+      gap: 25px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      background: #f5f5f5;
+      padding: 25px;
+      width: 280px;
+      border-radius: 15px;
+      transition: 0.3s;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .box:hover {
+      transform: translateY(-10px);
+      background: #317ac4;
+      color: white;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    section p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #333;
+      text-align: justify;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      margin-top: 20px;
+      background: #1e5799;
+      color: white;
+      font-size: 16px;
+    }
+
+    .social-icons {
+      margin-top: 15px;
+    }
+
+    .social-icons a {
+      margin: 0 15px;
+      font-size: 28px;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.3);
+    }
+
+    .fa-facebook:hover {
+      color: #1877f2;
+    }
+
+    .fa-instagram:hover {
+      color: #e1306c;
+    }
+
+    .fa-whatsapp:hover {
+      color: #25d366;
+    }
+
+    .skills {
+      margin-top: 40px;
+      text-align: left;
+    }
+
+    .skill {
+      margin-bottom: 15px;
+    }
+
+    .skill-name {
+      font-weight: bold;
+    }
+
+    .progress {
+      background: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 10px;
+      background: #317ac4;
+      width: 80%; /* Sesuaikan sesuai skill level */
+      animation: load 2s forwards;
+    }
+
+    @keyframes load {
+      100% { width: var(--value); }
+    }
+
+    @media (max-width: 600px) {
+      .box-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>I'm Yohanes Bawon</h1>
+  <p>WEB DEVELOPER STUDENT | RPL</p>
+</header>
+
+<section>
+
+  <img class="profile" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXxV5nt4JTNRuulEIRLfDl1oJ_swL7MWx9lw&s">
+
+  <h1>Tentang Saya</h1>
+  <p>
+    Saya adalah siswa kelas X RPL yang baru saja ingin belajar HTML dan CSS. Ini merupakan proyek pertama saya.
+  </p>
+
+  <div class="box-container">
+    <div class="box">
+      <h3>Latar Belakang</h3>
+      <p>
+        Saya berasal dari Papua Selatan, tepatnya di Kabupaten Boven Digoel. Saya tinggal di Asiki dan memiliki 3 saudara. Lingkungan saya membentuk saya menjadi anak yg sabar.
+      </p>
+    </div>
+
+    <div class="box">
+      <h3>Kehidupan Sekarang</h3>
+      <p>
+        Saat ini saya tinggal di Semarang di Wisma Remaja Putra Bagimu Negeriku. Saya sedang menempuh pendidikan kelas 10 dengan jurusan RPL. Saya sedang medapat kan projek membuat website.
+      </p>
+    </div>
+  </div>
+
+  <div class="skills">
+    <h2>Skill Saya</h2>
+    <div class="skill">
+      <div class="skill-name">PLAY GAME</div>
+      <div class="progress">
+        <div class="progress-bar" style="--value: 70%"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">DISAIIN IN FIGMA</div>
+      <div class="progress">
+        <div class="progress-bar" style="--value: 60%"></div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 Yohanes Bawon | Web Developer Student</p>
+
+  <div class="social-icons">
+    <a href="https://facebook.com/katuk duatiga" target="_blank">
+      <i class="fab fa-facebook"></i>
+    </a>
+
+    <a href="https://instagram.com/b.yohanis" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://wa.me/085251188088" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+</footer>
+
+</body>
+</html>
